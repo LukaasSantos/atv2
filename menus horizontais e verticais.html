@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+.mainmenubtn {
+background-color: red;
+color: white;
+border: none;
+cursor: pointer;
+padding:20px;
+margin-top:20px;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-child {
+display: none;
+background-color: black;
+min-width: 200px;
+}
+.dropdown-child a {
+color: white;
+padding: 20px;
+text-decoration: none;
+display: block;
+}
+.dropdown:hover .dropdown-child {
+display: block;
+}
+
+.nav {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="dropdown">
+<button class="mainmenubtn">Main menu</button>
+<div class="dropdown-child">
+<a href="http://wwww.yourdonain.com/page1.html">Child menu 1</a>
+<a href="http://wwww.yourdonain.com/page2.html">Child menu 2</a>
+<a href="http://wwww.yourdonain.com/page3.html">Child menu 3</a>
+<a href="http://wwww.yourdonain.com/page4.html">Child menu 4</a>
+<a href="http://wwww.yourdonain.com/page5.html">Child menu 5</a>
+</div>
+</div>
+
+<h1>Horizontal Navigation Links</h1>
+<p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+<p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+
+</body>
+</html>
